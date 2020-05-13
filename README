@@ -1,0 +1,16 @@
+Roundcube plugin
+----------------
+identities_aliases
+==================
+
+A simple roundcube plugin to manage local aliases and create temporary
+emails easily.
+
+This generate automatically an email when you add a new one throught
+Settings->Identities and the + (add) button. It will generate a text
+file that you can include separately in your postfix config and start
+a sudo command to update it's internal database when needed.
+
+All comments are welcome.
+
+David.
