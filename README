@@ -1,7 +1,7 @@
 Roundcube plugin
 ----------------
-identities_aliases
-==================
+identities_aliases v1.1.2
+=========================
 
 A simple roundcube plugin to manage local aliases and create temporary
 emails easily.
