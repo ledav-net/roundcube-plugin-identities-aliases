@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.9.0" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+	<name>identities_aliases</name>
+	<summary>Identities to user aliases plugin</summary>
+	<description>Plugin to generate aliases on identity changes.</description>
+	<lead>
+		<name>David De Grave</name>
+		<user>ledav.net</user>
+		<email>david@ledav.net</email>
+		<active>yes</active>
+	</lead>
+	<date>2017-05-01</date>
+	<version>
+		<release>1.1.2</release>
+		<api>1.0</api>
+	</version>
+	<stability>
+		<release>stable</release>
+		<api>stable</api>
+	</stability>
+        <uri>https://https://github.com/ledav-net/roundcube_plugin_identities_aliases</uri>
+	<license uri="http://www.gnu.org/licenses/gpl.html">GNU GPLv3+</license>
+	<notes>-</notes>
+	<contents>
+		<dir baseinstalldir="/" name="/">
+			<file name="identities_aliases.php" role="php">
+				<tasks:replace from="@name@" to="name" type="package-info"/>
+				<tasks:replace from="@package_version@" to="version" type="package-info"/>
+			</file>
+		</dir>
+	</contents>
+	<dependencies>
+		<required>
+			<php>
+				<min>5.2.1</min>
+			</php>
+		</required>
+	</dependencies>
+	<phprelease/>
+</package>
