@@ -21,6 +21,7 @@ class identities_aliases extends rcube_plugin
 	private $config;
 	private $alias_file;
 	private $alias_handle;
+	private $email_domain;
 	private $aliases = array();
 
 	public function init() {
