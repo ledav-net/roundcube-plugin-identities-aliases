@@ -53,6 +53,7 @@ class identities_aliases extends rcube_plugin
 	}
 	private function loadAliases() {
 		$this->alias_handle = fopen($this->alias_file, "r+");
+		flock($this->alias_handle, LOCK_EX);
 		$this->aliases = array();
 		while ( $l = @fgets($this->alias_handle) ) {
 			$l = trim($l);
@@ -67,6 +68,7 @@ class identities_aliases extends rcube_plugin
 		rewind($this->alias_handle);
 		ftruncate($this->alias_handle, 0);
 		fwrite($this->alias_handle, $this->arrayToString($this->aliases));
+		flock($this->alias_handle, LOCK_UN);
 		fclose($this->alias_handle);
 		$this->alias_handle = NULL;
 		return 0;
