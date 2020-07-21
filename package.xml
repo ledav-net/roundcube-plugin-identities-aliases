@@ -22,7 +22,7 @@
 		<api>stable</api>
 	</stability>
         <uri>https://github.com/ledav-net/roundcube_plugin_identities_aliases</uri>
-	<license uri="http://www.gnu.org/licenses/gpl.html">GNU GPLv3+</license>
+	<license uri="http://www.gnu.org/licenses/gpl.html">GPLv3+</license>
 	<notes>-</notes>
 	<contents>
 		<dir baseinstalldir="/" name="/">
