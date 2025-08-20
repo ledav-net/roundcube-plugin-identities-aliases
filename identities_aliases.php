@@ -57,9 +57,9 @@ class identities_aliases extends rcube_plugin
 		$this->aliases = array();
 		while ( $l = @fgets($this->alias_handle) ) {
 			$l = trim($l);
-			if ( $l[0] == '#' ) continue;
+			if ( !strlen($l) || $l[0] == '#' ) continue;
 			$a = preg_split("/[\s:]+/", $l);
-			if ( $a[0][0] )	$this->aliases[$a[1]][] = $a[0];
+			if ( strlen($a[0]) ) $this->aliases[$a[1]][] = $a[0];
 		}
 		return $this->aliases;
 	}
